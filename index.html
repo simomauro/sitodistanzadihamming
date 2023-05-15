@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Distanza di Hamming</title>
+<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="header">
+  <h1>Distanza di Hamming</h1>
+  <p>sito dedicato alla didattica</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="esercizi.html">Esercizi</a>
+  <a href="approfondimenti.html">Approfondimenti</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+
+  </div>
+  
+  <div class="column middle">
+    <h2>Cos'è?</h2>
+    <p>La distanza di Hamming è una misura fondamentale utilizzata per quantificare la differenza tra due stringhe di uguale lunghezza. Prende il nome dal matematico Richard Hamming ed è ampiamente utilizzata in diversi ambiti, tra cui la teoria dell'informazione, la crittografia e la correzione degli errori.</p>
+    <h2>A cosa serve?</h2>
+    <p>La distanza di Hamming permette di confrontare due stringhe e contare il numero di posizioni in cui i caratteri corrispondenti sono diversi. Questa metrica è particolarmente utile quando si lavora con dati binari o stringhe di bit, ma può essere adattata anche per stringhe di caratteri.
+      L'importanza di questa metrica risiede nel suo utilizzo in molti contesti. Ad esempio, nella teoria dell'informazione, la distanza di Hamming è cruciale per misurare l'efficienza di codici di correzione degli errori. In crittografia, aiuta a valutare la sicurezza degli algoritmi crittografici e rilevare eventuali manipolazioni dei dati. Inoltre, la distanza di Hamming è utilizzata anche nel riconoscimento di pattern e nella comparazione di sequenze genetiche.</p>
+    <div style="text-align:center;">
+      <img src="assets/binario.jpg" width="450">
+    </div>
+    <h2>Operatore XOR</h2>
+    <p>L'operatore XOR (exclusive OR) è un operatore logico che restituisce un valore vero (1) se uno e solo uno dei bit di input è vero, altrimenti restituisce un valore falso (0). Esso confronta due bit corrispondenti delle stringhe e determina la loro differenza. L'operatore XOR è ampiamente utilizzato in diverse applicazioni, incluso il calcolo della distanza di Hamming.</p>
+    <div style="text-align:center;">
+      <img src="assets/Xor.png" width="450">
+    </div>
+    <h2>Calcolo della distanza di Hamming attraverso l'operatore logico XOR</h2>
+    <p>Il calcolo della distanza di Hamming con l'operatore XOR è noto per la sua efficienza e semplicità di implementazione. L'operazione XOR bit a bit può essere eseguita in modo rapido utilizzando le operazioni di bit dei linguaggi di programmazione, il che rende il calcolo della distanza di Hamming efficiente anche per stringhe di grandi dimensioni.</p>
+    <p>Un aspetto importante da considerare è che il calcolo della distanza di Hamming con XOR non richiede la decodifica delle stringhe o il confronto dei caratteri uno per uno. Invece, l'operazione XOR viene applicata direttamente ai bit corrispondenti delle due stringhe, evitando così un'iterazione completa sui caratteri.</p>
+    <p>Il calcolo della distanza di Hamming utilizzando l'operatore XOR è un processo semplice ma efficace. Per calcolare la distanza tra due stringhe, esegui l'operazione XOR bit a bit tra i caratteri corrispondenti delle due stringhe e conta il numero di bit risultanti a 1.
+      Prendiamo ad esempio le stringhe binarie "00001111" e "10010101". Eseguendo l'operazione XOR bit a bit otteniamo:</p>
+    <div style="text-align:center;">
+      <img src="assets/esemp.png" width="450">
+    </div>
+    <p>un altro esempio le stringhe binarie "10001001" e "10110001". Eseguendo l'operazione XOR bit a bit otteniamo:</p>
+    <div style="text-align:center;">
+      <img src="assets/esmp2.jpg" width="450">
+    </div>
+    <p>Questo processo di confronto bit a bit utilizzando l'operatore XOR può essere implementato in modo efficiente in diversi linguaggi di programmazione, rendendo la distanza di Hamming con XOR una misura rapida e affidabile per valutare la differenza tra due stringhe. la distanza di Hamming calcolata con l'operatore XOR può essere utilizzata per identificare e correggere gli errori in una trasmissione di dati, poiché le posizioni in cui le stringhe differiscono corrispondono alle posizioni degli errori.</p>
+    <p>Inoltre, il calcolo della distanza di Hamming con l'operatore XOR può essere facilmente esteso per lavorare con stringhe di caratteri diversi da quelli binari. Per esempio, i caratteri possono essere convertiti in corrispondenti valori numerici o codificati come sequenze binarie prima di applicare l'operazione XOR.</p>
+    <p>La sua implementazione semplice e la sua efficacia lo rendono uno strumento prezioso in diverse applicazioni, inclusi sistemi di correzione degli errori, crittografia, riconoscimento di pattern e analisi di sequenze genetiche.</p>
+  </div>
+  
+  <div class="column side">
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>Concept & Desing by Simone</p>
+</div>
+  
+</body>
+</html>
